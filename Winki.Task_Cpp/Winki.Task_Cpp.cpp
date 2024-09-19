@@ -10,8 +10,8 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int a = 0;
-    int b = 0;
+    int a;
+    int b;
 
     cout << "Введите число a:" << endl;
     cin >> a;
@@ -21,17 +21,19 @@ int main()
 
     cout << endl;
 
-    if (a > b) 
+    if (a == 0 || b == 0) 
     {
-        cout << "a: " << a << " больше, чем b: " << b << endl;
+        cout << "Ошибка! На ноль не делится" << endl;
+        return 0;
     }
-    else if(a == b)
+
+    if(a / b == 0) 
     {
-        cout << "Оба числа равны!" << endl;
+        cout << "b: " << b << " кратно a: " << a << endl;
     }
-    else 
+    else if(b / a == 0)
     {
-        cout << "b: " << b << " больше, чем a: " << a << endl;
+        cout << "a: " << a << " кратно b: " << b << endl;
     }
 
     system("pause > nul");
