@@ -2,11 +2,41 @@
 //
 
 #include <iostream>
-#include <cs>
+#include <cstdlib>
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    system("chcp 1251 > nul");
+
+    int a = 0;
+    int b = 0;
+
+    cout << "Введите число a:" << endl;
+    cin >> a;
+
+    cout << "Введите число b:" << endl;
+    cin >> b;
+
+    cout << endl;
+
+    if (a > b) 
+    {
+        cout << "a: " << a << " больше, чем b: " << b << endl;
+    }
+    else if(a == b)
+    {
+        cout << "Оба числа равны!" << endl;
+    }
+    else 
+    {
+        cout << "b: " << b << " больше, чем a: " << a << endl;
+    }
+
+    system("pause > nul");
+
+    return 0;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
