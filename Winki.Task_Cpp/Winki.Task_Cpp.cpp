@@ -21,6 +21,22 @@ int main()
         return 0;
     }
 
+    if (number == 50)
+    {
+        cout << "Ваше число " << number << " равняется 50" << endl;
+        return 0;
+    }
+    else if (number > 50)
+    {
+        cout << "Ваше число " << number << " больше 50" << endl;
+        return 0;
+    }
+    else
+    {
+        cout << "Ваше число " << number << " меньше 50" << endl;
+        return 0;
+    }
+
     system("pause > nul");
 
     return 0;
