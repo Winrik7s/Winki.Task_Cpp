@@ -10,9 +10,16 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int number;
-
+    int a;
+    int b;
     
+    cout << "Введите первое число:" << endl;
+    cin >> a;
+
+    cout << "Введите второе число:" << endl;
+    cin >> b;
+
+    cout << (a > b ? "a > b" : (a < b ? "a < b" : "a = b")) << endl;
 
     system("pause > nul");
 
