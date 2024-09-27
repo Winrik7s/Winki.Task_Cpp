@@ -10,14 +10,10 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int a;
-    int b;
+    int number;
 
-    cout << "Введите число a:" << endl;
-    cin >> a;
-
-    cout << "Введите число b:" << endl;
-    cin >> b;
+    cout << "Введите число от 1 до 100:" << endl;
+    cin >> number;
 
     cout << endl;
 
