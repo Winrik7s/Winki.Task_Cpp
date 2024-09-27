@@ -15,21 +15,10 @@ int main()
     cout << "Введите число от 1 до 100:" << endl;
     cin >> number;
 
-    cout << endl;
-
-    if (a == 0 || b == 0) 
+    if (number < 1 || number > 100) 
     {
-        cout << "Ошибка! На ноль не делится" << endl;
+        cout << "Ваше число превышает допустимый диапозон!" << endl;
         return 0;
-    }
-
-    if(a / b == 0) 
-    {
-        cout << "b: " << b << " кратно a: " << a << endl;
-    }
-    else if(b / a == 0)
-    {
-        cout << "a: " << a << " кратно b: " << b << endl;
     }
 
     system("pause > nul");
