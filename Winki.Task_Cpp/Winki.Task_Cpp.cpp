@@ -10,7 +10,17 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int a;
+    int number;
+
+    cout << "Введите лимитное число:" << endl;
+    cin >> number;
+
+    cout << endl;
+
+    for(int i = 1; i < number; i += 2)
+    {
+        cout << i << ": " << i * i << endl;
+    }
 
     system("pause > nul");
 
