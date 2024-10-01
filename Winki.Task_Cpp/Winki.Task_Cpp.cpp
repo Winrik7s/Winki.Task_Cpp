@@ -21,6 +21,8 @@ int main()
 
     } while (symbol != '.');
 
+    cout << endl;
+
     cout << "Кол - во символов, которые Вы ввели: " << number - 1 << endl;
 
     system("pause > nul");
