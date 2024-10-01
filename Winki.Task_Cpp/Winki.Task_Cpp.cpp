@@ -10,7 +10,18 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    char symbol;
+    int number = 0;
+
+    do
+    {
+        cout << "Введите только один символ: " << endl;
+        cin >> symbol;
+        number++;
+
+    } while (symbol != '.');
+
+    cout << "Кол - во символов, которые Вы ввели: " << number - 1 << endl;
 
     system("pause > nul");
 
