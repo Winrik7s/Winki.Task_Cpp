@@ -10,20 +10,23 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    char symbol;
+    char symbol = ' ';
     int number = 0;
 
-    do
+    int sum = 0;
+
+    while(symbol != 'y')
     {
-        cout << "Введите только один символ: " << endl;
+        cout << "Введите число:" << endl;
+        cin >> number;
+
+        cout << "Вы закончили ввод?" << endl;
         cin >> symbol;
-        number++;
 
-    } while (symbol != '.');
+        sum = sum + number;
+    }
 
-    cout << endl;
-
-    cout << "Кол - во символов, которые Вы ввели: " << number - 1 << endl;
+    cout << "Сумма: " <<  sum << endl;
 
     system("pause > nul");
 
