@@ -10,6 +10,17 @@ int main()
 {
     system("chcp 1251 > nul");
 
+    int a = 0;
+    int b = 0;
+
+    cout << "Введите первое число: ";
+    cin >> a;
+
+    cout << "Введите второе число: ";
+    cin >> b;
+
+    int sum = a + b;
+    cout << "Сумма двух чисел равна: " << sum << endl;
 
     system("pause > nul");
 
