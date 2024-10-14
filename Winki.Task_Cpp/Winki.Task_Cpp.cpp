@@ -10,30 +10,6 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int n = 0;
-    int s = 0;
-    int a = 0;
-
-    while (true)
-    {
-        cout << "Введите число: ";
-        cin >> n;
-
-        s += n;
-        a++;
-
-        char symbol;
-
-        cout << "Вы закончили ввод? (y / n): ";
-        cin >> symbol;
-
-        if (symbol == 'y' || symbol == 'Y') break;
-    }
-
-    cout << endl;
-
-    cout << "Сумма чисел, которые Вы ввели: " <<  s << endl;
-    cout << "Среднее арифметическое чисел, которые Вы ввели: " << (s / a) << endl;
 
     system("pause > nul");
 
