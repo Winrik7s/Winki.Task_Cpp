@@ -6,11 +6,37 @@
 
 using namespace std;
 
+unsigned long long Factor(int number)
+{
+    if(number <= 0)
+    {
+        cout << "Факториал числа не определен!" << endl;
+        return 0;
+    }
+
+    unsigned long long result = 1;
+    for(int i = 1; i <= number; i++)
+    {
+        result *= i;
+    }
+    return result;
+}
+
 int main()
 {
     system("chcp 1251 > nul");
 
-    
+    int number;
+
+    cout << "Введите число: ";
+    cin >> number;
+
+    unsigned long long factor = Factor(number);
+
+    if (number > 0) 
+    {
+        cout << "Факториал числа " << number << " равен: " << factor << endl;
+    }
 
     system("pause > nul");
 
