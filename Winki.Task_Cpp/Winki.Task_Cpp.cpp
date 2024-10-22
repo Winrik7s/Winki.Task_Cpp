@@ -10,19 +10,7 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int a = 0;
-
-    cout << "Введите число: ";
-    cin >> a;
-
-    if(a % 2 == 0)
-    {
-        cout << "Число " << a << " четное!" << endl;
-    }
-    else
-    {
-        cout << "Число " << a << " не четное!" << endl;
-    }
+    
 
     system("pause > nul");
 
