@@ -10,18 +10,7 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    string line;
-    string lineR;
-
-    cout << "Введите строку: ";
-    cin >> line;
-
-    for(int i = line.length(); i >= 0; i--)
-    {
-        lineR += line[i];
-    }
-
-    cout << "Строка в обратном порядке: " << lineR << endl;
+    
 
     system("pause > nul");
 
