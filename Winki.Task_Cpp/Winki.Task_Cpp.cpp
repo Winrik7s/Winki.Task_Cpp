@@ -10,7 +10,12 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    string line;
+
+    cout << "";
+    cin >> line;
+
+    //There will be no second task
 
     system("pause > nul");
 
