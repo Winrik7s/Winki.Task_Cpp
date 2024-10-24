@@ -10,26 +10,7 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int array[5] {6, 5, 2, 3, 1};
-
-    int max = array[0];
-    int min = max;
-
-    for(int i = 1; i < 5; i++)
-    {
-        if(array[i] > max)
-        {
-            max = array[i];
-        }
-
-        if(array[i] < min)
-        {
-            min = array[i];
-        }
-    }
-
-    cout << "Максимальный элемент массива: " << max << endl;
-    cout << "Минимальный элемент массива: " << min << endl;
+    
 
     system("pause > nul");
 
