@@ -10,7 +10,18 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    int array[5] {3, 1, 4, 1, 5};
+    int max = array[0];
+
+    for(int i = 1; i < 6; i++)
+    {
+        if(array[i] > max)
+        {
+            max = array[i];
+        }
+    }
+
+    cout << "Максимальный элемент массива: " << max << endl;
 
     system("pause > nul");
 
