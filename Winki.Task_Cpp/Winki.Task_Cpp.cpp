@@ -10,17 +10,7 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int num = 1;
-    int sum = 0;
-
-    while (num != 0) 
-    {
-        cout << "Введите число (0 для выхода): ";
-        cin >> num;
-        sum += num;
-    }
-
-    cout << "Сумма введенных чисел: " << sum << endl;
+    
 
     system("pause > nul");
 
