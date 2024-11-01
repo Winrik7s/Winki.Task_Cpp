@@ -10,7 +10,22 @@ int main()
 {
     system("chcp 1251 > nul");
 
+    int arr[5];
+    int number = 0;
+
+    for(int j = 0; j < size(arr); j++)
+    {
+        cout << "Введите число:" << endl;
+        cin >> number;
+        arr[j] = number;
+    }
     
+    cout << "Вывод массива в обратном порядке:" << endl;
+
+    for(int i = size(arr) - 1; i >= 0; i--)
+    {
+        cout << arr[i] << endl;
+    }
 
     system("pause > nul");
 
