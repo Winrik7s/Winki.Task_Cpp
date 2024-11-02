@@ -39,10 +39,10 @@ int main()
     symbol = pack & mask;
     cout << symbol;
 
-    symbol = (pack >> 8) & mask;
+    symbol = (pack >> 2) & mask;
     cout << symbol;
 
-    symbol = (pack >> 16) & mask;
+    symbol = (pack >> 2) & mask;
     cout << symbol << endl;
 
     system("pause > nul");
