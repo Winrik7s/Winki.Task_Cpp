@@ -10,30 +10,7 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    char arr[10];
-    string line;
-
-    cout << "Введите строку: ";
-    cin >> line;
-
-    cout << endl;
-
-    cout << "Все символы массива: ";
-
-    for(int j = 0; j < size(arr); j++)
-    {
-        arr[j] = line[j];
-        cout << arr[j] << " ";
-    }
-
-    cout << endl;
     
-    cout << "Вывод массива в обратном порядке: ";
-
-    for(int i = size(arr) - 1; i >= 0; i--)
-    {
-        cout << arr[i] << " ";
-    }
 
     system("pause > nul");
 
