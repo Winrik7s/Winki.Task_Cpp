@@ -8,23 +8,21 @@ using namespace std;
 
 int main()
 {
-    system("chcp 1251 > nul");
-
     int pack;
     char symbol;
 
-    cout << "Введите первый символ: ";
+    cout << "Enter the first character: ";
     cin >> symbol;
 
     pack = pack | symbol;
 
-    cout << "Введите второй символ: ";
+    cout << "Enter the second character: ";
     cin >> symbol;
 
     pack = pack << 2;
     pack = pack | symbol;
 
-    cout << "Введите третий символ: ";
+    cout << "Enter the third character: ";
     cin >> symbol;
 
     pack = pack << 2;
@@ -32,9 +30,11 @@ int main()
 
     cout << endl;
 
+    cout << "Packaged characters: ";
     cout << pack << endl;
 
     int mask = { 0xFF };
+    cout << "Unpacked characters: ";
 
     symbol = pack & mask;
     cout << symbol;
@@ -43,7 +43,7 @@ int main()
     cout << symbol;
 
     symbol = (pack >> 16) & mask;
-    cout << symbol;
+    cout << symbol << endl;
 
     system("pause > nul");
 
