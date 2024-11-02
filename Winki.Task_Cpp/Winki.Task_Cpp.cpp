@@ -10,7 +10,40 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    int pack;
+    char symbol;
+
+    cout << "Введите первый символ: ";
+    cin >> symbol;
+
+    pack = pack | symbol;
+
+    cout << "Введите второй символ: ";
+    cin >> symbol;
+
+    pack = pack << 2;
+    pack = pack | symbol;
+
+    cout << "Введите третий символ: ";
+    cin >> symbol;
+
+    pack = pack << 2;
+    pack = pack | symbol;
+
+    cout << endl;
+
+    cout << pack << endl;
+
+    int mask = { 0xFF };
+
+    symbol = pack & mask;
+    cout << symbol;
+
+    symbol = (pack >> 8) & mask;
+    cout << symbol;
+
+    symbol = (pack >> 16) & mask;
+    cout << symbol;
 
     system("pause > nul");
 
