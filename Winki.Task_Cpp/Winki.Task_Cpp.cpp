@@ -11,17 +11,17 @@ int main()
     system("chcp 1251 > nul");
 
     int arr[10]{5, 2, 8, 3, 18, 1, 0, 4, 64, 12};
-    int sum = 0;
+    int max = arr[0];
 
     for (int i = 0; i <= size(arr); i++) 
     {
-        if (arr[i] % 2 == 0) 
+        if (arr[i] > max)
         {
-            sum = sum + arr[i];
+            max = arr[i];
         }
     }
 
-    cout << "Сумма четных элементов массива: " << sum << endl;
+    cout << "Максимальный элемент массива: " << max << endl;
 
     delete[] arr;
 
