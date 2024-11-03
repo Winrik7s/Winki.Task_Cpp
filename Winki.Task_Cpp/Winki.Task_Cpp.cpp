@@ -8,42 +8,9 @@ using namespace std;
 
 int main()
 {
-    int pack;
-    char symbol;
+    system("chcp 1251 > nul");
 
-    cout << "Enter the first character: ";
-    cin >> symbol;
 
-    pack = pack | symbol;
-
-    cout << "Enter the second character: ";
-    cin >> symbol;
-
-    pack = pack << 2;
-    pack = pack | symbol;
-
-    cout << "Enter the third character: ";
-    cin >> symbol;
-
-    pack = pack << 2;
-    pack = pack | symbol;
-
-    cout << endl;
-
-    cout << "Packaged characters: ";
-    cout << pack << endl;
-
-    int mask = { 0xFF };
-    cout << "Unpacked characters: ";
-
-    symbol = pack & mask;
-    cout << symbol;
-
-    symbol = (pack >> 2) & mask;
-    cout << symbol;
-
-    symbol = (pack >> 2) & mask;
-    cout << symbol << endl;
 
     system("pause > nul");
 
