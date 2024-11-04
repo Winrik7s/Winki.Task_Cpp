@@ -10,8 +10,18 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int number = 10;
-    string line = "20";
+    int number = 0;
+    string line;
+
+    cout << "";
+    cin >> number;
+
+    cout << endl;
+
+    cout << "";
+    cin >> line;
+
+    cout << endl;
 
     for (int i = 0; i < number; i++) 
     {
