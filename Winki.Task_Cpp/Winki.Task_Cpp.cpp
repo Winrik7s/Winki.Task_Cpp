@@ -10,7 +10,13 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    int number = 10;
+    string line = "20";
+
+    for (int i = 0; i < number; i++) 
+    {
+        cout << line << " ";
+    }
 
     system("pause > nul");
 
