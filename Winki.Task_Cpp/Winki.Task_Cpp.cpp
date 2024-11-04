@@ -13,12 +13,12 @@ int main()
     int number = 0;
     string line;
 
-    cout << "";
+    cout << "Введите кол - во вывода: ";
     cin >> number;
 
     cout << endl;
 
-    cout << "";
+    cout << "Введите число, которое нужно вывести: ";
     cin >> line;
 
     cout << endl;
