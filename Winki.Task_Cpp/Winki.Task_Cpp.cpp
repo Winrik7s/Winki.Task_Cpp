@@ -15,9 +15,16 @@ int main()
     cout << "Введите число: ";
     cin >> number;
 
-    for(int i = number; i < 35 + 1; i++)
+    if (number < 10) 
     {
-        cout << i << endl;
+        cout << "Ошибка!" << endl;
+    }
+    else 
+    {
+        for (int i = 10; i < number + 1; i++)
+        {
+            cout << i * i * i << endl;
+        }
     }
 
     system("pause > nul");
