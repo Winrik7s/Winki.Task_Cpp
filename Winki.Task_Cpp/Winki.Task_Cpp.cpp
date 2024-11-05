@@ -10,21 +10,18 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int number;
+    int number1;
+    int number2;
 
     cout << "Введите число: ";
-    cin >> number;
+    cin >> number1;
 
-    if (number < 10) 
+    cout << "Введите число: ";
+    cin >> number2;
+
+    for (int i = number1; i > number2 + 1; i--)
     {
-        cout << "Ошибка!" << endl;
-    }
-    else 
-    {
-        for (int i = 10; i < number + 1; i++)
-        {
-            cout << i * i << endl;
-        }
+            cout << i << endl;
     }
 
     system("pause > nul");
