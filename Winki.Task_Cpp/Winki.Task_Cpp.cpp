@@ -10,7 +10,15 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    int number;
+
+    cout << "Введите число: ";
+    cin >> number;
+
+    for(int i = number; i < 35 + 1; i++)
+    {
+        cout << i << endl;
+    }
 
     system("pause > nul");
 
