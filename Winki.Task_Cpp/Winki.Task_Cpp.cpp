@@ -10,23 +10,7 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int number = 0;
-    string line;
-
-    cout << "Введите кол - во вывода: ";
-    cin >> number;
-
-    cout << endl;
-
-    cout << "Введите число, которое нужно вывести: ";
-    cin >> line;
-
-    cout << endl;
-
-    for (int i = 0; i < number; i++) 
-    {
-        cout << line << " ";
-    }
+    
 
     system("pause > nul");
 
