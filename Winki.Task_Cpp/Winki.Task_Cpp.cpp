@@ -23,7 +23,7 @@ int main()
     {
         for (int i = 10; i < number + 1; i++)
         {
-            cout << i * i * i << endl;
+            cout << i * i << endl;
         }
     }
 
