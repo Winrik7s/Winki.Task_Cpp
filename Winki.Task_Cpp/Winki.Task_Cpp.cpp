@@ -10,19 +10,7 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int number1;
-    int number2;
-
-    cout << "Введите число: ";
-    cin >> number1;
-
-    cout << "Введите число: ";
-    cin >> number2;
-
-    for (int i = number1; i > number2 + 1; i--)
-    {
-            cout << i << endl;
-    }
+    
 
     system("pause > nul");
 
