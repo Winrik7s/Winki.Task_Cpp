@@ -10,7 +10,12 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    int num1 = 10;
+
+    for(int i = num1; i < 25 + 1; i++)
+    {
+        cout << i << " " << i << ".4" << endl;
+    }
 
     system("pause > nul");
 
