@@ -10,11 +10,11 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int number = 16;
+    double price = 55.99;
 
-    for(int i = number; i < 24; i++)
+    for(int i = 1; i < 20; i++)
     {
-        cout << i << " " << i - 1 << ".5 " << i << ".5" << endl;
+        cout << i << " " << price * i << endl;
     }
 
     return 0;
