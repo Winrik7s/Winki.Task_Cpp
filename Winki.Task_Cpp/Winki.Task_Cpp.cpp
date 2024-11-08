@@ -10,11 +10,11 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int number = 21;
+    int number = 16;
 
-    for(int i = number; i < 36; i++)
+    for(int i = number; i < 24; i++)
     {
-        cout << i << " " << i - 1 << ".4" << endl;
+        cout << i << " " << i - 1 << ".5 " << i << ".5" << endl;
     }
 
     return 0;
