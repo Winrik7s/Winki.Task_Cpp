@@ -10,7 +10,12 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    int number = 21;
+
+    for(int i = number; i < 36; i++)
+    {
+        cout << i << " " << i - 1 << ".4" << endl;
+    }
 
     return 0;
 }
