@@ -2,7 +2,6 @@
 //
 
 #include <iostream>
-#include <cstdlib>
 
 using namespace std;
 
@@ -10,12 +9,7 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    double price = 55.99;
-
-    for(int i = 1; i < 20; i++)
-    {
-        cout << i << " " << price * i << endl;
-    }
+    
 
     return 0;
 }
