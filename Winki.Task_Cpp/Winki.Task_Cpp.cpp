@@ -9,7 +9,30 @@ int main()
 {
     system("chcp 1251 > nul");
 
+    int N, *arr;
+    int max = 0, index;
     
+    cout << "Введите кол - во элементов массива: ";
+    cin >> N;
+
+    arr = new int[N];
+    cout << "Введите элементы массива:" << endl;
+
+    for(int i = 0; i < N; i++)
+    {
+        cin >> arr[i];
+    }
+
+    for(int k = 0; k < N; k++)
+    {
+        if(max < arr[k])
+        {
+            max = arr[k];
+            index = k;
+        }
+    }
+
+    cout << "Максимальный элемент массива: arr[" << index << "] = " << max;
 
     return 0;
 }
