@@ -9,20 +9,7 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    const int num = 453;
-    int a;
-
-    int result;
-
-    cout << "" << endl;
-    cin >> a;
-
-    for(int i = 1; i < a + 1; i++)
-    {
-        result = i * num;
-    }
-
-    cout << result << endl;
+    
 
     return 0;
 }
