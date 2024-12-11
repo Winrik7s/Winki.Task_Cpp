@@ -15,6 +15,8 @@ int main()
     int arr[Q];
     cout << "Введите элементы массива:" << endl;
 
+    cout << endl;
+
     for(int i = 0; i < Q; i++)
     {
         cin >> arr[i];
@@ -31,6 +33,8 @@ int main()
     }
 
     cout << "Сумма четных элементов массива: " << sum;
+
+    delete[] arr;
 
     return 0;
 }
