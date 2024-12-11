@@ -9,7 +9,28 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    const int Q = 8;
+    int sum = 0;
+
+    int arr[Q];
+    cout << "Введите элементы массива:" << endl;
+
+    for(int i = 0; i < Q; i++)
+    {
+        cin >> arr[i];
+    }
+
+    cout << endl;
+
+    for(int k = 0; k < Q; k++)
+    {
+        if(arr[k] % 2 == 0)
+        {
+            sum += arr[k];
+        }
+    }
+
+    cout << "Сумма четных элементов массива: " << sum;
 
     return 0;
 }
