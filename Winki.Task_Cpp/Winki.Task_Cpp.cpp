@@ -7,6 +7,12 @@ using namespace std;
 
 int fSum(int x)
 {
+    if(x > 999 || x < 100)
+    {
+        cout << "Ошибка! Введите трехзначное число!" << endl;
+        return 0;
+    }
+
     int num1 = x / 100;
     int num2 = (x % 100) / 10;
     int num3 = x / 10;
@@ -20,7 +26,10 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    int number;
+
+    cout << "Введите трехзначное число: ";
+    cin >> number;
 
     return 0;
 }
