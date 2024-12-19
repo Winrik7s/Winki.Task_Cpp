@@ -29,7 +29,13 @@ int main()
 
     int result = fSum(number);
 
-    if(result >= 10)
+    if (number > 999 || number < 100)
+    {
+        cout << "Ошибка! Введите трехзначное число!" << endl;
+        return 1;
+    }
+
+    if(result >= 10 && result <= 99)
     {
         cout << "Сумма цифр: " << result << " является двузначным числом" << endl;
     }
