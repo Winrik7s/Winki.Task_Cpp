@@ -5,17 +5,17 @@
 
 using namespace std;
 
-int fSum(int x)
+int fMul(int x)
 {
-    int sum = 0;
+    int mul = 0;
 
     while(x > 0)
     {
-        sum += x % 10;
+        mul *= x % 10;
         x /= 10;
     }
 
-    return sum;
+    return mul;
 }
 
 int main()
