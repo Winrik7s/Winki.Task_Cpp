@@ -5,6 +5,17 @@
 
 using namespace std;
 
+int fSum(int x)
+{
+    int num1 = x / 100;
+    int num2 = (x % 100) / 10;
+    int num3 = x / 10;
+
+    int sum = num1 + num2 + num3;
+
+    return sum;
+}
+
 int main()
 {
     system("chcp 1251 > nul");
