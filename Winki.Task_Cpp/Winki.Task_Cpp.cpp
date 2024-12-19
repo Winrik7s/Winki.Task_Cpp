@@ -7,17 +7,13 @@ using namespace std;
 
 int fSum(int x)
 {
-    if(x > 999 || x < 100)
+    int sum = 0;
+
+    while(x > 0)
     {
-        cout << "Ошибка! Введите трехзначное число!" << endl;
-        return 0;
+        sum += x % 10;
+        x /= 10;
     }
-
-    int num1 = x / 100;
-    int num2 = (x % 100) / 10;
-    int num3 = x / 10;
-
-    int sum = num1 + num2 + num3;
 
     return sum;
 }
@@ -30,6 +26,17 @@ int main()
 
     cout << "Введите трехзначное число: ";
     cin >> number;
+
+    int result = fSum(number);
+
+    if(result >= 10)
+    {
+        cout << "Сумма цифр: " << result << " является двузначным числом" << endl;
+    }
+    else
+    {
+        cout << "Сумма цифр: " << result << " не является двузначным числом" << endl;
+    }
 
     return 0;
 }
