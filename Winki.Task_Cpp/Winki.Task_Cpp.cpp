@@ -7,7 +7,7 @@ using namespace std;
 
 int fMul(int x)
 {
-    int mul = 0;
+    int mul = 1;
 
     while(x > 0)
     {
@@ -27,7 +27,7 @@ int main()
     cout << "Введите трехзначное число: ";
     cin >> number;
 
-    int result = fSum(number);
+    int result = fMul(number);
 
     if (number > 999 || number < 100)
     {
@@ -35,13 +35,13 @@ int main()
         return 1;
     }
 
-    if(result >= 10 && result <= 99)
+    if(result >= 100 && result <= 999)
     {
-        cout << "Сумма цифр: " << result << " является двузначным числом" << endl;
+        cout << "Сумма цифр: " << result << " является трехзначным числом" << endl;
     }
     else
     {
-        cout << "Сумма цифр: " << result << " не является двузначным числом" << endl;
+        cout << "Сумма цифр: " << result << " не является трехзначным числом" << endl;
     }
 
     return 0;
