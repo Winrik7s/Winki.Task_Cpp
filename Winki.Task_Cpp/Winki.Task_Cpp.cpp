@@ -55,6 +55,20 @@ int main()
         cout << "Сумма цифр числа " << number << " не кратна трем" << endl;
     }
 
+    cout << endl;
+
+    //Вариант В:
+    int mul = num1 * num2 * num3 * num4;
+
+    if (mul % 4 == 0)
+    {
+        cout << "Произведение цифр числа " << number << " кратна четырем" << endl;
+    }
+    else
+    {
+        cout << "Произведение цифр числа " << number << " не кратна четырем" << endl;
+    }
+
     return 0;
 }
 
