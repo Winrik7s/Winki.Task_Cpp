@@ -9,7 +9,18 @@ int main()
 {
     system("chcp 1251 > nul");
 
+    int number = 0;
     
+    cout << "";
+    cin >> number;
+
+    if(number > 999 || number < 100)
+    {
+        cout << "Ошибка! Введите трехзначное число!" << endl;
+        return 1;
+    }
+
+
 
     return 0;
 }
