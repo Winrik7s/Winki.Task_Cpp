@@ -20,6 +20,8 @@ int main()
         return 1;
     }
 
+    cout << endl;
+
     //Вариант А:
     int num1 = number / 1000;
     int num2 = (number % 1000) / 100;
@@ -37,6 +39,20 @@ int main()
     else
     {
         cout << "Сумма двух первых цифр числа " << number << " не равна сумме последних его цифр" << endl;
+    }
+
+    cout << endl;
+
+    //Вариант Б:
+    int sum = num1 + num2 + num3 + num4;
+
+    if(sum % 3 == 0)
+    {
+        cout << "Сумма цифр числа " << number << " кратна трем" << endl;
+    }
+    else
+    {
+        cout << "Сумма цифр числа " << number << " не кратна трем" << endl;
     }
 
     return 0;
