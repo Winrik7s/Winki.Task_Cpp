@@ -77,6 +77,17 @@ int main()
     cout << "Введите число: ";
     cin >> userNumber;
 
+    cout << endl;
+
+    if (mul % userNumber == 0)
+    {
+        cout << "Произведение цифр числа " << number << " кратна " << userNumber << endl;
+    }
+    else
+    {
+        cout << "Произведение цифр числа " << number << " не кратна " << userNumber << endl;
+    }
+
     return 0;
 }
 
