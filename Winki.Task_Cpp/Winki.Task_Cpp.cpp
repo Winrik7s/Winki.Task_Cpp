@@ -9,7 +9,35 @@ int main()
 {
     system("chcp 1251 > nul");
 
+    int number = 0;
     
+    cout << "Введите четырехзначное число: ";
+    cin >> number;
+
+    if(number < 1000 || number > 9999)
+    {
+        cout << "Ошибка! Введите четырехзначное число!" << endl;
+        return 1;
+    }
+
+    //Вариант А:
+    int num1 = number / 1000;
+    int num2 = (number % 1000) / 100;
+    
+    int num3 = (number % 100) / 10;
+    int num4 = number % 10;
+
+    int sum1 = num1 + num2;
+    int sum2 = num3 + num3;
+
+    if(sum1 == sum2)
+    {
+        cout << "Сумма двух первых цифр числа " << number << " равна сумме последних его цифр" << endl;
+    }
+    else
+    {
+        cout << "Сумма двух первых цифр числа " << number << " не равна сумме последних его цифр" << endl;
+    }
 
     return 0;
 }
