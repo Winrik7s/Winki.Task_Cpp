@@ -20,7 +20,19 @@ int main()
         return 1;
     }
 
+    //Вариант А:
+    int num1 = number / 100;
+    int num2 = (number % 100) / 10;
+    int num3 = number % 10;
 
+    if(num1 == num2 && num1 == num3)
+    {
+        cout << "Цифры числа " << number << " одинаковы" << endl;
+    }
+    else
+    {
+        cout << "Цифры числа " << number << " не одинаковы" << endl;
+    }
 
     return 0;
 }
