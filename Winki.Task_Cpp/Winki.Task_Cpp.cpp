@@ -5,44 +5,11 @@
 
 using namespace std;
 
-int fMul(int x)
-{
-    int mul = 1;
-
-    while(x > 0)
-    {
-        mul *= x % 10;
-        x /= 10;
-    }
-
-    return mul;
-}
-
 int main()
 {
     system("chcp 1251 > nul");
 
-    int number;
-
-    cout << "Введите трехзначное число: ";
-    cin >> number;
-
-    int result = fMul(number);
-
-    if (number > 999 || number < 100)
-    {
-        cout << "Ошибка! Введите трехзначное число!" << endl;
-        return 1;
-    }
-
-    if(result >= 100 && result <= 999)
-    {
-        cout << "Сумма цифр: " << result << " является трехзначным числом" << endl;
-    }
-    else
-    {
-        cout << "Сумма цифр: " << result << " не является трехзначным числом" << endl;
-    }
+    
 
     return 0;
 }
