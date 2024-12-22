@@ -69,6 +69,14 @@ int main()
         cout << "Произведение цифр числа " << number << " не кратна четырем" << endl;
     }
 
+    cout << endl;
+
+    //Вариант Г:
+    int userNumber = 0;
+
+    cout << "Введите число: ";
+    cin >> userNumber;
+
     return 0;
 }
 
