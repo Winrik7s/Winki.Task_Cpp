@@ -11,7 +11,7 @@ int main()
 
     int number = 0;
     
-    cout << "";
+    cout << "Введите трехзначное число: ";
     cin >> number;
 
     if(number > 999 || number < 100)
@@ -19,6 +19,8 @@ int main()
         cout << "Ошибка! Введите трехзначное число!" << endl;
         return 1;
     }
+
+    cout << endl;
 
     //Вариант А:
     int num1 = number / 100;
@@ -32,6 +34,18 @@ int main()
     else
     {
         cout << "Цифры числа " << number << " не одинаковы" << endl;
+    }
+
+    cout << endl;
+
+    //Вариант Б:
+    if(num1 == num2 || num2 == num3 || num1 == num3)
+    {
+        cout << "Среди цифр числа " << number << " есть одинаковые" << endl;
+    }
+    else
+    {
+        cout << "Среди цифр числа " << number << " нет одинаковых" << endl;
     }
 
     return 0;
