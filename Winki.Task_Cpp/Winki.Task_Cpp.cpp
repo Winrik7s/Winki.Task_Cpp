@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -9,7 +10,29 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    string line;
+    int count = 0;
+
+    cout << "Введите строку: ";
+    getline(cin, line);
+
+    if(line[0] == ' ')
+    {
+        cout << "Строка не должна начинаться с пробела!" << endl;
+        return -1;
+    }
+
+    for(int i = 0; i < line.size(); i++)
+    {
+        if(line[i] == ' ')
+        {
+            count++;
+        }
+    }
+
+    cout << "Количество слов в строке: " << count << endl;
+
+    system("pause > nul");
 
     return 0;
 }
