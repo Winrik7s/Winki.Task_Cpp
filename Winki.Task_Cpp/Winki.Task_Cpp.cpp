@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-#include <string>
+#include <cstdlib>
 
 using namespace std;
 
@@ -10,28 +10,7 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int number, num1, num2;
-
-    cout << "Введите двузначное число: ";
-    cin >> number;
-
-    if(number < 10 || number > 99)
-    {
-        cout << "Число должно быть двузначным!" << endl;
-        return -1;
-    }
-
-    num1 = number / 10;
-    num2 = number % 10;
-
-    if(num1 == 3 || num2 == 3)
-    {
-        cout << "В введенное число входит цифра три" << endl;
-    }
-    else
-    {
-        cout << "В введенное число не входит цифра три" << endl;
-    }
+    
 
     system("pause > nul");
 
