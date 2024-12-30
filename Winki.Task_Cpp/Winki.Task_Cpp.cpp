@@ -23,14 +23,17 @@ int main()
         cout << "Оба числа равны" << endl;
     }
 
-    if(num1 > num2)
+    if(num1 > num2 || num2 > num1)
     {
-        cout << "Число: " << num1 << " больше чем: " << num2 << endl;
-    }
+        if(num1 > num2)
+        {
+            cout << "Число: " << num1 << " больше чем: " << num2 << endl;
+        }
 
-    if(num2 > num1)
-    {
-        cout << "Число: " << num2 << " больше чем: " << num1 << endl;
+        if(num2 > num1)
+        {
+            cout << "Число: " << num2 << " больше чем: " << num1 << endl;
+        }
     }
 
     system("pause > nul");
