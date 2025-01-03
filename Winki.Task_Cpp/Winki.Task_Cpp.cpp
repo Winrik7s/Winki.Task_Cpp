@@ -10,7 +10,24 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    const double num = 100.78;
+    double numbers[10] = {7, 12, 5, 4, 6, 9, 54.3, 8.92, 1, 0.04};
+
+    double sum = 0;
+
+    for(int i = 0; i <= 10; i++)
+    {
+        sum += numbers[i];
+    }
+
+    if(sum > num)
+    {
+        cout << "Сумма вещественных чисел " << sum << " больше чем: " << num << endl;
+    }
+    else
+    {
+        cout << "Сумма вещественных чисел " << sum << " меньше чем: " << num << endl;
+    }
 
     system("pause > nul");
 
