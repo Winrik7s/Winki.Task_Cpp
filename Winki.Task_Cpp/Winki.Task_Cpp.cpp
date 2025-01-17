@@ -10,28 +10,7 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    const int N = 5;
-    double numbers[N] = {12.3, 25.7, 96.15, 55.1, 43.91};
-
-    double sum = 0;
-    int num = 0;
-
-    cout << "Введите целое число: ";
-    cin >> num;
-
-    for(int i = 0; i <= N; i++)
-    {
-        sum += numbers[i];
-    }
-
-    if(sum > num)
-    {
-        cout << "Сумма вещественных чисел " << sum << " больше чем: " << num << endl;
-    }
-    else
-    {
-        cout << "Сумма вещественных чисел " << sum << " меньше чем: " << num << endl;
-    }
+    
 
     system("pause > nul");
 
