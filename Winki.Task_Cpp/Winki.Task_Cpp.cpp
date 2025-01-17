@@ -33,7 +33,7 @@ int main()
         min = num3;
     }
 
-    cout << "Наименьшее значение: " << max << endl;
+    cout << "Наименьшее значение: " << min << endl;
 
     system("pause > nul");
 
