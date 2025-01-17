@@ -10,7 +10,7 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    double num1, num2;
+    double num1, num2, num3;
 
     cout << "Введите первое число: ";
     cin >> num1;
@@ -18,21 +18,8 @@ int main()
     cout << "Введите второе число: ";
     cin >> num2;
 
-    if(true)
-    {
-        if(num1 > num2)
-        {
-            cout << num1 << " больше чем " << num2 << endl;
-        }
-        else if(num2 > num1)
-        {
-            cout << num2 << " больше чем " << num1 << endl;
-        }
-        else
-        {
-            cout << "Оба числа равны!" << endl;
-        }
-    }
+    cout << "Введите третье число: ";
+    cin >> num3;
 
     system("pause > nul");
 
