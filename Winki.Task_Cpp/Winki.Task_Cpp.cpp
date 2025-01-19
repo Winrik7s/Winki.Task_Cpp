@@ -10,7 +10,17 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    int num;
+
+    cout << "Введите число: ";
+    cin >> num;
+
+    if(num < 0)
+    {
+        num = -num;
+    }
+
+    cout << "| " << num << " | = " << num << endl;
 
     system("pause > nul");
 
