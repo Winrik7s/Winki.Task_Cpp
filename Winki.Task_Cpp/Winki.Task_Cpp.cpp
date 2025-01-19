@@ -10,30 +10,7 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    double num1, num2, num3, min;
-
-    cout << "Введите первое число: ";
-    cin >> num1;
-
-    cout << "Введите второе число: ";
-    cin >> num2;
-
-    cout << "Введите третье число: ";
-    cin >> num3;
-
-    min = num1;
-
-    if(min > num2)
-    {
-        min = num2;
-    }
-
-    if(min > num3)
-    {
-        min = num3;
-    }
-
-    cout << "Наименьшее значение: " << min << endl;
+    
 
     system("pause > nul");
 
