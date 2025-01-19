@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <cstdlib>
+#include <Math.h>
 
 using namespace std;
 
@@ -10,17 +11,29 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int num;
+    int num1, num2;
 
-    cout << "Введите число: ";
-    cin >> num;
+    cout << "Введите первое число: ";
+    cin >> num1;
 
-    if(num < 0)
+    cout << "Введите второе число: ";
+    cin >> num2;
+
+    if(num1 < 0)
     {
-        num = -num;
+        num1 = -num1;
     }
 
-    cout << "| " << num << " | = " << num << endl;
+    if(num2 < 0)
+    {
+        num2 = -num2;
+    }
+
+    int sum = (num1 + num2) / 2;
+    int mul = sqrt(num1 * num2);
+
+    cout << "Полусумма: " << sum << endl;
+    cout << "Квадратный корень: " << mul << endl;
 
     system("pause > nul");
 
