@@ -10,7 +10,40 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    float x, y;
+
+    cout << "Введите точки координат: ";
+    cin >> x >> y;
+
+    if(x == 0 || y == 0)
+    {
+        cout << "Ошибка! Точки коордиант не равняются нулю" << endl;
+        return -1;
+    }
+
+    if(x > 0 && y > 0)
+    {
+        cout << "Первая четверть" << endl;
+        return 0;
+    }
+
+    if (x < 0 && y > 0)
+    {
+        cout << "Вторая четверть" << endl;
+        return 0;
+    }
+
+    if (x < 0 && y < 0)
+    {
+        cout << "Третья четверть" << endl;
+        return 0;
+    }
+
+    if (x > 0 && y < 0)
+    {
+        cout << "Четвертая четверть" << endl;
+        return 0;
+    }
 
     system("pause > nul");
 
