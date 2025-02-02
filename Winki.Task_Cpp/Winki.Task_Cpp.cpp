@@ -10,7 +10,35 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    float num1, num2, num3;
+
+    cout << "Введите три вещественных числа: ";
+    cin >> num1 >> num2 >> num3;
+
+    float max = num1;
+    float min = num1;
+
+    if (max < num2) 
+    {
+        max = num2;
+    }
+
+    if(max < num3)
+    {
+        max = num3;
+    }
+
+    if(min > num2)
+    {
+        min = num2;
+    }
+
+    if(min > num3)
+    {
+        min = num3;
+    }
+
+    cout << "Максимальное значение: " << max << endl << "Минимальное значение: " << min << endl;
 
     system("pause > nul");
 
