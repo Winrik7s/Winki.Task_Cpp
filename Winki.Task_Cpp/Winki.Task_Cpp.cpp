@@ -18,16 +18,19 @@ int main()
     cout << "Введите второе вещественное число:" << endl;
     cin >> num2;
 
-    if(num1 > num2)
+    if(num1 > num2 || num2 > num1)
     {
-        cout << "Наибольшее число: " << num1 << ", наименьшее число: " << num2 << endl;
-        return 0;
-    }
+        if (num1 > num2)
+        {
+            cout << "Наибольшее число: " << num1 << ", наименьшее число: " << num2 << endl;
+            return 0;
+        }
 
-    if(num2 > num1)
-    {
-        cout << "Наибольшее число: " << num2 << ", наименьшее число: " << num1 << endl;
-        return 0;
+        if (num2 > num1)
+        {
+            cout << "Наибольшее число: " << num2 << ", наименьшее число: " << num1 << endl;
+            return 0;
+        }
     }
 
     system("pause > nul");
