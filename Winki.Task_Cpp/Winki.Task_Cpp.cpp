@@ -10,7 +10,25 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    float num1, num2;
+
+    cout << "Введите первое вещественное число:" << endl;
+    cin >> num1;
+
+    cout << "Введите второе вещественное число:" << endl;
+    cin >> num2;
+
+    if(num1 > num2)
+    {
+        cout << "Число " << num1 << " больше чем " << num2 << endl;
+        return 0;
+    }
+
+    if(num2 > num1)
+    {
+        cout << "Число " << num2 << " больше чем " << num1 << endl;
+        return 0;
+    }
 
     system("pause > nul");
 
