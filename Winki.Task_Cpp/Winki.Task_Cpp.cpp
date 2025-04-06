@@ -10,7 +10,34 @@ int main()
 {
     system("chcp 1251 > nul");
 
+    float num1, num2, num3;
     
+    cout << "Введите первое число: ";
+    cin >> num1;
+
+    cout << "Введите второе число: ";
+    cin >> num2;
+
+    cout << "Введите третье число: ";
+    cin >> num3;
+
+    if(num1 > num2 && num1 > num3)
+    {
+        cout << "Число " << num1 << " наибольшее" << endl;
+        return 0;
+    }
+
+    if (num2 > num1 && num2 > num3)
+    {
+        cout << "Число " << num2 << " наибольшее" << endl;
+        return 0;
+    }
+
+    if (num3 > num1 && num3 > num2)
+    {
+        cout << "Число " << num3 << " наибольшее" << endl;
+        return 0;
+    }
 
     system("pause > nul");
 
