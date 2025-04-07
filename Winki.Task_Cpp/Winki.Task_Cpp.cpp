@@ -10,41 +10,7 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    float num1, num2, num3, num4, max, min;
     
-    cout << "Введите первое число: ";
-    cin >> num1;
-
-    cout << "Введите второе число: ";
-    cin >> num2;
-
-    cout << "Введите третье число: ";
-    cin >> num3;
-
-    cout << "Введите четвертое число: ";
-    cin >> num4;
-
-    max = num1;
-    min = num4;
-
-    if (max < num2)
-        max = num2;
-    if (max < num3)
-        max = num3;
-    if (max < num4)
-        max = num4;
-
-    if (min > num1)
-        min = num1;
-    if (min > num2)
-        min = num2;
-    if (min > num3)
-        min = num3;
-
-    cout << "\n";
-
-    cout << "Наибольшее число: " << max << endl;
-    cout << "Наименьшее число: " << min << endl;
 
     system("pause > nul");
 
