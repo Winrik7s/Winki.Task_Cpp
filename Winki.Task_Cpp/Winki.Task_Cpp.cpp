@@ -10,7 +10,23 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    float number = 0;
+
+    cout << "Введите вещественное число: ";
+    cin >> number;
+
+    if(number >= 0)
+    {
+        cout << "Абсолютная величина: " << (int)number << endl;
+        return 0;
+    }
+
+    if(number < 0)
+    {
+        number = ~(int)number + 1;
+        cout << "Абсолютная величина: " << number << endl;
+        return 0;
+    }
 
     system("pause > nul");
 
