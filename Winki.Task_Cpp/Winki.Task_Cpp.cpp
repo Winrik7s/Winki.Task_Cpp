@@ -19,11 +19,11 @@ int main()
     cout << "Введите второе число: ";
     cin >> number2;
 
-    if(abs(number1) > abs(number2))
+    if(sqrt(number2) < number1)
     {
-        number1 /= 2;
+        number2 *= 5;
 
-        cout << (int)number1;
+        cout << number2;
         return 0;
     }
 
