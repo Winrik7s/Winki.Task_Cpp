@@ -11,7 +11,21 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    float number1, number2;
+
+    cout << "Введите первое число: ";
+    cin >> number1;
+
+    cout << "Введите второе число: ";
+    cin >> number2;
+
+    if(abs(number1) > abs(number2))
+    {
+        number1 /= 2;
+
+        cout << (int)number1;
+        return 0;
+    }
 
     system("pause > nul");
 
