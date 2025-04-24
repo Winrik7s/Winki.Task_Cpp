@@ -11,43 +11,7 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    float number1 = 0;
-    float number2 = 0;
-
-    cout << "Введите вещественное число: ";
-    cin >> number1;
-
-    cout << "Введите вещественное число: ";
-    cin >> number2;
-
-    if(number1 >= 0)
-    {
-        cout << "Абсолютная величина: " << (int)number1 << endl;
-    }
-
-    if(number1 < 0)
-    {
-        number1 = ~(int)number1 + 1;
-        cout << "Абсолютная величина: " << number1 << endl;
-    }
-
-    if (number2 >= 0)
-    {
-        cout << "Абсолютная величина: " << (int)number2 << endl;
-    }
-
-    if (number2 < 0)
-    {
-        number2 = ~(int)number2 + 1;
-        cout << "Абсолютная величина: " << number2 << endl;
-    }
-
-    float sum = (float)(number1 + number2) / 2;
-    float mul = (float)number1 * number2;
-    float squ = sqrt(mul);
-
-    cout << "Полусумма абсолютной величины: " << sum << endl;
-    cout << "Квадратный корень произведения абсолютной величины: " << squ << endl;
+    
 
     system("pause > nul");
 
