@@ -11,7 +11,17 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    
+    int arr[] = {5, 6, 9};
+
+    cout << "Четные:" << endl;
+
+    for(int i = 0; i < size(arr); i++)
+    {
+        if(arr[i] % 2 == 0)
+        {
+            cout << arr[i] << endl;
+        }
+    }
 
     system("pause > nul");
 
