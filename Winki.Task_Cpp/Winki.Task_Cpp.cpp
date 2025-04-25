@@ -11,15 +11,15 @@ int main()
 {
     system("chcp 1251 > nul");
 
-    int arr[] = {5, 6, 9};
+    float arr[] = {0.5f, -1.2f, 4.0f};
 
-    cout << "Четные:" << endl;
+    cout << "Неотрицательные:" << endl;
 
     for(int i = 0; i < size(arr); i++)
     {
-        if(arr[i] % 2 == 0)
+        if(arr[i] >= 0)
         {
-            cout << arr[i] << endl;
+            cout << sqrt(arr[i]) << endl;
         }
     }
 
